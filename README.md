@@ -10,4 +10,4 @@ This repository includes the issues I faced during cloning and using some code r
   > 
   > Following the comment: https://github.com/microsoft/Magma/issues/76#issuecomment-2867103221, I tried creating the environment again and I was able to do it
   > 
-  > The issues I faced and how I resolved them are in the file: 
+  > The issues I faced and how I resolved them are in the file: [Magma-issues.md](https://github.com/srvmishra/Code-Issues/blob/main/Magma-issues.md)
