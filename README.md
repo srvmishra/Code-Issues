@@ -6,7 +6,7 @@ This repository includes the issues I faced during cloning and using some code r
 - Arxiv Link: https://www.arxiv.org/pdf/2502.13130
 - GitHub Code: https://github.com/microsoft/Magma
   
-  > **1. Environment Creation Issue due to `pyav` version mismatch**: https://github.com/microsoft/Magma/issues/76
+### **1. Environment Creation Issue due to `pyav` version mismatch**: https://github.com/microsoft/Magma/issues/76
   > 
   > Following the comment: https://github.com/microsoft/Magma/issues/76#issuecomment-2867103221, I tried creating the environment again and I was able to do it
   > 
@@ -15,7 +15,7 @@ This repository includes the issues I faced during cloning and using some code r
   > This issue seems to be resolved because the environment is created. And after that, I ran the [Inference with bitsandbytes
 ](https://github.com/microsoft/Magma?tab=readme-ov-file#inference-with-bitsandbytes) code and it ran perfectly. Some warnings were there but the code output was fine. 
 
-  > **2. `gradio_client` issue**: while running `python agents/ui_agent/app.py`
+ ### **2. `gradio_client` issue**: while running `python agents/ui_agent/app.py`
   >
   > The things that I have tried are given in the file: [gradio client issues](https://github.com/srvmishra/Code-Issues/blob/main/gradio%20client%20issue.md)
   >
