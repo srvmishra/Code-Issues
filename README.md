@@ -12,7 +12,7 @@ This repository includes the issues I faced during cloning and using some code r
   > 
   > The issues I faced and how I resolved them are in the file: [Magma-issues.md](https://github.com/srvmishra/Code-Issues/blob/main/Magma-issues.md)
   >
-  > This issue seems to be resolved because the environment is created. And after that, I ran the [Inference with bitsandbytes
+  > This issue seems to be resolved because the environment is created and after that, I ran the [Inference with bitsandbytes
 ](https://github.com/microsoft/Magma?tab=readme-ov-file#inference-with-bitsandbytes) code and it ran perfectly. Some warnings were there but the code output was fine. 
 
  ### **2. `gradio_client` issue**: while running `python agents/ui_agent/app.py`
