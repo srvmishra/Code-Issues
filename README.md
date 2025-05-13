@@ -15,7 +15,7 @@ This repository includes the issues I faced during cloning and using some code r
   > This issue seems to be resolved because the environment is created and after that, I ran the [Inference with bitsandbytes
 ](https://github.com/microsoft/Magma?tab=readme-ov-file#inference-with-bitsandbytes) code and it ran perfectly. Some warnings were there but the code output was fine. 
 
- ### 2. `gradio_client` issue**: while running `python agents/ui_agent/app.py`
+ ### 2. `gradio_client` issue: while running `python agents/ui_agent/app.py`
   >
   > The things that I have tried are given in the file: [gradio client issues](https://github.com/srvmishra/Code-Issues/blob/main/gradio%20client%20issue.md)
   >
@@ -27,7 +27,7 @@ This repository includes the issues I faced during cloning and using some code r
   >
   > Current magma environment contains the following: `datasets==2.14.4` and `fsspec==2025.3.2`. Upon upgrading the `datasets` library using `pip install -U datasets`, the error got resolved. We need the latest version of datasets. The command installs `datasets==3.6.0` and `fsspec==2025.3.0`. This is documented in the file [dataset loading issue.md](https://github.com/srvmishra/Code-Issues/blob/main/dataset%20loading%20issue.md).
 
- ### **4. `TypeError` during running the inference with bits and bytes code
+ ### 4. `TypeError` during running the inference with bits and bytes code
   >
   > The code for inference with bits and bytes is given at: [inference with bits and bytes](https://github.com/microsoft/Magma?tab=readme-ov-file#inference-with-bitsandbytes).
   >
