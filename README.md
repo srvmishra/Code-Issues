@@ -25,7 +25,7 @@ This repository includes the issues I faced during cloning and using some code r
   > 
   > The error that I was getting was `ValueError: Invalid pattern: '**' can only be an entire path component`.
   >
-  > Current magma environment contains the following: `datasets==2.14.4` and `fsspec==2025.3.2`. Upon upgrading the `datasets` library using `pip install -U datasets`, the error got resolved. We need the latest version of datasets. The command installs `datasets==3.6.0` and `fsspec==2025.3.0`. This is documented in the file []().
+  > Current magma environment contains the following: `datasets==2.14.4` and `fsspec==2025.3.2`. Upon upgrading the `datasets` library using `pip install -U datasets`, the error got resolved. We need the latest version of datasets. The command installs `datasets==3.6.0` and `fsspec==2025.3.0`. This is documented in the file [dataset loading issue.md](https://github.com/srvmishra/Code-Issues/blob/main/dataset%20loading%20issue.md).
 
  ### **4. `TypeError` during running the inference with bits and bytes code
   >
@@ -33,4 +33,4 @@ This repository includes the issues I faced during cloning and using some code r
   >
   > I cloned the magma repository, created the enviroment, and copied the code from above into a file within the cloned repository. I ran the file.
   >
-  > The error is documented in the file [](). I was not able to fix the issue but restarting the system fixed the issue without making any changes to the code. The same error is raised in the issue [Issue#77](https://github.com/microsoft/Magma/issues/77) which is currently open but it arises from a different file.
+  > The error is documented in the file [inference code issue.md](). I was not able to fix the issue but restarting the system fixed the issue without making any changes to the code. The same error is raised in the issue [Issue#77](https://github.com/microsoft/Magma/issues/77) which is currently open but it arises from a different file.
