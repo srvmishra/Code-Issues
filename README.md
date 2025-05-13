@@ -33,4 +33,4 @@ This repository includes the issues I faced during cloning and using some code r
   >
   > I cloned the magma repository, created the enviroment, and copied the code from above into a file within the cloned repository. I ran the file.
   >
-  > The error is documented in the file [inference code issue.md](). I was not able to fix the issue but restarting the system fixed the issue without making any changes to the code. The same error is raised in the issue [Issue#77](https://github.com/microsoft/Magma/issues/77) which is currently open but it arises from a different file.
+  > The error is documented in the file [inference code issue.md](https://github.com/srvmishra/Code-Issues/blob/main/inference%20code%20issue.md). I was not able to fix the issue but restarting the system fixed the issue without making any changes to the code. The same error is raised in the issue [Issue#77](https://github.com/microsoft/Magma/issues/77) which is currently open but it arises from a different file.
