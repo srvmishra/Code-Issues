@@ -20,3 +20,17 @@ This repository includes the issues I faced during cloning and using some code r
   > The things that I have tried are given in the file: [gradio client issues](https://github.com/srvmishra/Code-Issues/blob/main/gradio%20client%20issue.md)
   >
   > This issue seems to be persisting and there are some things that I have not tried yet. I have listed them in the above file. Will look into it later when making some demos of my own.
+ 
+ ### **3. Dataset loading issue: while using `load_dataset()` from `datasets`
+  > 
+  > The error that I was getting was `ValueError: Invalid pattern: '**' can only be an entire path component`.
+  >
+  > Current magma environment contains the following: `datasets==2.14.4` and `fsspec==2025.3.2`. Upon upgrading the `datasets` library using `pip install -U datasets`, the error got resolved. We need the latest version of datasets. The command installs `datasets==3.6.0` and `fsspec==2025.3.0`. This is documented in the file []().
+
+ ### **4. `TypeError` during running the inference with bits and bytes code
+  >
+  > The code for inference with bits and bytes is given at: [inference with bits and bytes](https://github.com/microsoft/Magma?tab=readme-ov-file#inference-with-bitsandbytes).
+  >
+  > I cloned the magma repository, created the enviroment, and copied the code from above into a file within the cloned repository. I ran the file.
+  >
+  > The error is documented in the file [](). I was not able to fix the issue but restarting the system fixed the issue without making any changes to the code. The same error is raised in the issue [Issue#77](https://github.com/microsoft/Magma/issues/77) which is currently open but it arises from a different file.
