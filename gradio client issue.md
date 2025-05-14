@@ -56,3 +56,18 @@ I have not gone ahead with these just yet.
 
 `gradio=4.44.1` and `gradio-client=1.3.0` ---> upgrade to ---> `gradio-5.29.0 gradio-client-1.10.0 groovy-0.1.2 safehttpx-0.1.6`
 `pydantic=2.11.4` and `pydantic-core=2.33.2` ---> downgrade to ---> `pydantic-2.10.6 pydantic-core-2.27.2`
+
+After making the above changes, I get the following:
+
+```
+
+Could not create share link. Missing file: /home/io452/.cache/huggingface/gradio/frpc/frpc_linux_amd64_v0.3.
+
+Please check your internet connection. This can happen if your antivirus software blocks the download of this file. You can install manually by following these steps:
+
+1. Download this file: https://cdn-media.huggingface.co/frpc-gradio-0.3/frpc_linux_amd64
+2. Rename the downloaded file to: frpc_linux_amd64_v0.3
+3. Move the file to this location: /home/io452/.cache/huggingface/gradio/frpc
+```
+
+and the screen is stuck there. I followed the instructions and ran the code again. The screen is still stuck at this point. I will create the magma environment on server and run the demo to see if this error comes because I think this issue is due to WSL.
