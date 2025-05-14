@@ -53,3 +53,6 @@ Apparently I have a new version of pydantic in the `magma` environment which is:
 Before going ahead with installing new libraries to modify the environment, I first checked in the github issues of `magma`. But I did not find any related issue with `gradio_client`.
 
 I have not gone ahead with these just yet.
+
+`gradio=4.44.1` and `gradio-client=1.3.0` ---> upgrade to ---> `gradio-5.29.0 gradio-client-1.10.0 groovy-0.1.2 safehttpx-0.1.6`
+`pydantic=2.11.4` and `pydantic-core=2.33.2` ---> downgrade to ---> `pydantic-2.10.6 pydantic-core-2.27.2`
