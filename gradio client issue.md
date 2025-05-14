@@ -71,3 +71,13 @@ Please check your internet connection. This can happen if your antivirus softwar
 ```
 
 and the screen is stuck there. I followed the instructions and ran the code again. The screen is still stuck at this point. I will create the magma environment on server and run the demo to see if this error comes because I think this issue is due to WSL.
+
+I reverted the libraries to their original versions and the code gets stuck at the following error and does not get past it - 
+
+```
+File "/home/io452/miniconda3/envs/magma/lib/python3.10/site-packages/gradio_client/utils.py", line 863, in get_type
+    if "const" in schema:
+TypeError: argument of type 'bool' is not iterable
+```
+
+
