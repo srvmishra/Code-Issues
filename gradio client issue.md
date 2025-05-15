@@ -80,4 +80,5 @@ File "/home/io452/miniconda3/envs/magma/lib/python3.10/site-packages/gradio_clie
 TypeError: argument of type 'bool' is not iterable
 ```
 
+I think that the gradio client is running and it is simply stuck there. There is some internal error and we are not able to get it running on a browser. That's all about it. I need to look further.
 
