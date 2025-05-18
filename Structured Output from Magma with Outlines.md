@@ -216,19 +216,21 @@ I realized that I had not included separate system and user prompts in the earli
 Added `np.random.seed(0)` at the beginning, and `sampler=outlines.samplers.greedy()` to `outlines.generate.json()` to get deterministic output. 
 
 files changed inside libraries: 
+
 1. `outlines.models.transformers_vision`: major changes: `lines: 46-80`
 
 2. `/home/fte5/.cache/huggingface/modules/transformers_modules/microsoft/Magma-8B/b33355b3cffebdf9d8e60207f30a2cb1193b55c0/modeling_magma.py`: print statements added at `lines: 675-681` and `line: 619`.
 
 changes to `eval_dataset.py`:
-1. split conversations[0] field into the common system_prompt and the different user_prompt parts. this can be used as a mapping function to the MagmaAI/Magma-Mind2Web-SoM dataset to feed it to the model for finetuning, inference, etc.
 
-2. added np.random.seed(0) at the beginning, and sampler=outlines.samplers.greedy() to outlines.generate.json() to get deterministic output. you can use this for OS-Atlas too.
+1. split `conversations[0]` field into the common `system_prompt` and the different `user_prompt` parts. this can be used as a mapping function to the `MagmaAI/Magma-Mind2Web-SoM` dataset to feed it to the model for finetuning, inference, etc.
 
-jupyter notebook for inference on MagmaAI/Magma-Mind2Web-SoM: inference_mind2web_example.ipynb
+2. added `np.random.seed(0)` at the beginning, and `sampler=outlines.samplers.greedy()` to `outlines.generate.json()` to get deterministic output. you can use this for OS-Atlas too.
 
 things to do:
 
-we need the SoM parameters for the Mind2Web dataset that the Magma people used. we will use these parameters to map the Mind2Web images to SoM marked images. we also need the mapping between mark and type, or at least a way to convert between the ground truths of these datasets. SoM will give us marks and the corresponding box coordinates so the mapping between marks and coordinates is with us. to be consistent with the mapping between mark and type we need the SoM parameters used by the magma people, because type is only present in the dataset ground truth. I don't think it is part of the SoM function output. too many or too few boxes might lead to false predictions during inference.
-we need to compare the normal Mind2Web dataset ground truths to the SoM annotated Mind2Web dataset ground truths. this will tell us what output format to apply to the magma outputs while finetuning on each dataset. 
-is the outlines library the only way to ensure structured output? it changes the sampling strategy. so is it a good thing to use it during finetuning? what sampling strategy should we use during finetuning and evaluation? what do the magma people use?
+1. we need the SoM parameters for the Mind2Web dataset that the Magma people used. we will use these parameters to map the Mind2Web images to SoM marked images. we also need the mapping between mark and type, or at least a way to convert between the ground truths of these datasets. SoM will give us marks and the corresponding box coordinates so the mapping between marks and coordinates is with us. to be consistent with the mapping between mark and type we need the SoM parameters used by the magma people, because type is only present in the dataset ground truth. I don't think it is part of the SoM function output. too many or too few boxes might lead to false predictions during inference.
+
+2. we need to compare the normal Mind2Web dataset ground truths to the SoM annotated Mind2Web dataset ground truths. this will tell us what output format to apply to the magma outputs while finetuning on each dataset. 
+
+3. is the outlines library the only way to ensure structured output? it changes the sampling strategy. so is it a good thing to use it during finetuning? what sampling strategy should we use during finetuning and evaluation? what do the magma people use?
