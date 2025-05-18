@@ -34,3 +34,9 @@ This repository includes the issues I faced during cloning and using some code r
   > I cloned the magma repository, created the enviroment, and copied the code from above into a file within the cloned repository. I ran the file.
   >
   > The error is documented in the file [inference code issue.md](https://github.com/srvmishra/Code-Issues/blob/main/inference%20code%20issue.md). I was not able to fix the issue but restarting the system fixed the issue without making any changes to the code. The same error is raised in the issue [Issue#77](https://github.com/microsoft/Magma/issues/77) which is currently open but it arises from a different file.
+
+ ### 5. Getting Structured Output from Magma model
+  >
+  > First I posted the issue [in this comment](https://github.com/microsoft/Magma/issues/77#issuecomment-2888326658) and then in this file [Structured Output from Magma with Outlines.md](https://github.com/srvmishra/Code-Issues/blob/main/Structured%20Output%20from%20Magma%20with%20Outlines.md). I was able to get the structured output as desired but adding the output template to the prompt made no difference in the generation side.
+  >
+  > The problem is we cannot use the `outlines` library for finetuning because it changes the way tokens are sampled from the model. At least I was not able to find a way to finetune VLMs with `outlines`.
